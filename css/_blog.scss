@@ -1,0 +1,56 @@
+.main-blog {
+    padding: 80px 0;
+
+    .input-with-icon {
+        position: relative;
+        max-width: 416px;
+
+        .bi-search {
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: $secondary;
+        }
+
+        input {
+            width: 100%;
+            padding: 16px 16px 16px 50px;
+            border: 1px solid $secondary;
+            border-radius: 40px;
+
+            &::placeholder {
+                color: $secondary;
+            }
+        }
+    }
+
+    .article-list {
+        padding: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px 24px;
+
+        .article-item {
+            width: calc((100% - 48px) / 3);
+
+            @media (max-width: 1200px) {
+                width: calc((100% - 24px) / 2);
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            gap: 32px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 64px 0;
+    }
+}
+
