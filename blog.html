@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>部落格</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RBPPEW49NL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RBPPEW49NL');
+    </script>
 </head>
 <body>
     <!-- 導覽列 -->
@@ -56,7 +66,7 @@
         <!-- 文章列表 -->
         <section class="article container">
             <ul class="article-list">
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog1.jpg" alt="article-pic1"></div>
                     <div class="article-body">
                         <time datetime="2024-10-11" class="article-time">2024/10/11</time>
@@ -71,7 +81,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog2.jpg" alt="article-pic2"></div>
                     <div class="article-body">
                         <time datetime="2024-09-07" class="article-time">2024/09/07</time>
@@ -86,7 +96,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog3.jpg" alt="article-pic3"></div>
                     <div class="article-body">
                         <time datetime="2024-09-03" class="article-time">2024/09/03</time>
@@ -101,7 +111,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog4.jpg" alt="article-pic4"></div>
                     <div class="article-body">
                         <time datetime="2024-07-09" class="article-time">2024/07/09</time>
@@ -116,7 +126,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog5.jpg" alt="article-pic5"></div>
                     <div class="article-body">
                         <time datetime="2024-07-08" class="article-time">2024/07/08</time>
@@ -132,7 +142,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog6.jpg" alt="article-pic6"></div>
                     <div class="article-body">
                         <time datetime="2024-06-29" class="article-time">2024/06/29</time>
@@ -147,7 +157,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog7.jpg" alt="article-pic7"></div>
                     <div class="article-body">
                         <time datetime="2024-05-04" class="article-time">2024/05/04</time>
@@ -162,7 +172,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog8.jpg" alt="article-pic8"></div>
                     <div class="article-body">
                         <time datetime="2024-05-01" class="article-time">2024/05/01</time>
@@ -177,7 +187,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog9.jpg" alt="article-pic9"></div>
                     <div class="article-body">
                         <time datetime="2024-02-17" class="article-time">2024/02/17</time>
@@ -192,7 +202,7 @@
                     </div>
                 </li>
 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog10.jpg" alt="article-pic10"></div>
                     <div class="article-body">
                         <time datetime="2024-02-17" class="article-time">2024/02/17</time>
@@ -207,7 +217,7 @@
                     </div>
                 </li>
                 
-                <li class="article-item">
+                <li class="article-item" data-aos="fade-up">
                     <div class="item-pic"><img src="images/blog11.jpg" alt="article-pic11"></div>
                     <div class="article-body">
                         <time datetime="2024-02-07" class="article-time">2024/02/07</time>
@@ -256,5 +266,28 @@
         <p>&copy; 2025 Alyse Wang. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // ─── 全域設定 ───
+            disable: false,                // 何時停用 AOS：可填 'phone' / 'tablet' / 'mobile'，或直接給布林值、表達式、函式
+            startEvent: 'DOMContentLoaded',// AOS 什麼事件被觸發時才開始初始化
+            initClassName: 'aos-init',     // 元素在初始化完成後會先加上的類名
+            animatedClassName: 'aos-animate', // 動畫正式啟動時套用的類名
+            useClassNames: false,          // 若設為 true，會把 `data-aos` 的值做為類名，在滾動時一併加上
+            disableMutationObserver: false,// 是否關閉 MutationObserver 自動偵測 DOM 變動（進階）
+            debounceDelay: 50,             // 視窗尺寸改變時的 debounce 間隔（毫秒）
+            throttleDelay: 99,             // 滾動事件的 throttle 間隔（毫秒）
+
+            // ─── 可用 `data-aos-*` 覆寫的項目 ───
+            offset: 120,                   // 觸發動畫時，元素與視窗的距離（px）// 建議 120~150
+            delay: 0,                      // 動畫延遲 0–3000 ms，步進 50 ms
+            duration: 600,                 // 動畫時長 0–3000 ms，步進 50 ms // 建議 400~800
+            easing: 'ease',                // 動畫預設 easing 函式
+            once: false,                   // true 表示動畫只在第一次向下滾動時播放
+            mirror: false,                 // true 表示滾過元素後向上滑回可再次播放（鏡像效果）
+            anchorPlacement: 'top-bottom', // 判定元素相對視窗的位置來觸發動畫，例如 'top-bottom' 代表元素頂端到視窗底端
+        });
+    </script>
 </body>
 </html>

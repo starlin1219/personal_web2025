@@ -10,12 +10,13 @@
     p {
         margin-bottom: 16px;
         font-size: 24px;
-    }    
+    }
     
     @media (max-width: 992px) {
         max-width: 93.6%;
         position: static;
         margin: 0 auto;
+        padding: 24px;
     }
 }
 
@@ -214,6 +215,12 @@
 }
 
 /* 諮詢與案例 */
+@media (max-width: 768px) {
+    .break-line {
+        display: inline-block;
+    }
+}
+
 .consult {
     display: flex;
     align-items: center;
@@ -444,6 +451,7 @@
 
     &:hover {
         color: $primary;
+        cursor: pointer;
 
         .bi-arrow-right {
             transform: translateX(5px);

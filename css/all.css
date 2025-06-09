@@ -350,6 +350,7 @@ footer {
     max-width: 93.6%;
     position: static;
     margin: 0 auto;
+    padding: 24px;
   }
 }
 
@@ -528,6 +529,11 @@ footer {
   }
 }
 /* 諮詢與案例 */
+@media (max-width: 768px) {
+  .break-line {
+    display: inline-block;
+  }
+}
 .consult {
   display: flex;
   align-items: center;
@@ -728,6 +734,7 @@ footer {
 }
 .contact-item:hover {
   color: #0027D5;
+  cursor: pointer;
 }
 .contact-item:hover .bi-arrow-right {
   transform: translateX(5px);
